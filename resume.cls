@@ -16,7 +16,7 @@
 \setsansfont{Times New Roman}
 \setmonofont{Arial}
 
-\usepackage[UTF-8]{ctex}
+\usepackage{xeCJK}
 \setCJKmainfont[BoldFont=SimHei]{SimSun}
 \setCJKmonofont{SimSun} 
 
