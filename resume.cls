@@ -90,7 +90,6 @@
   {\bf \texttt{#1}} % Section title
   \sectionlineskip
   \hrule % Horizontal line
-
 }{
 }
 
