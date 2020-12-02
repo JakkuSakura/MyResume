@@ -13,12 +13,24 @@
 ]{hyperref}
 \usepackage[left=0.6in,top=0.6in,right=0.6in,bottom=0.6in]{geometry} % Document margins
 
-\setsansfont{Times New Roman}
-\setmonofont{Arial}
+\setsansfont{DejaVu Serif}
+\setmonofont{Noto Sans Mono CJK SC}
 
 \usepackage{xeCJK}
-\setCJKmainfont[BoldFont=SimHei]{SimSun}
+\setCJKmainfont{SimSun}
 \setCJKmonofont{SimSun} 
+
+
+\newcommand\threeparts[4][t]{
+  \parbox[#1]{.2\textwidth}{\raggedright#2}\hfill
+  \parbox[#1]{.5\textwidth}{\centering#3}\hfill
+  \parbox[#1]{.23\textwidth}{\raggedleft#4}
+}
+
+\usepackage{xcolor}
+\definecolor{shadecolor}{RGB}{230,230,230}
+\newcommand{\bgcolor}[1]{\par\noindent\colorbox{shadecolor}
+{\parbox{\dimexpr\textwidth-2\fboxsep\relax}{#1}}}
 
 %----------------------------------------------------------------------------------------
 %	HEADINGS COMMANDS: Commands for printing name and address
@@ -87,29 +99,39 @@
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
   \sectionskip
-  {\bf \texttt{#1}} % Section title
-  \sectionlineskip
+  {\bf \large \texttt{#1}} % Section title
+  \smallskip
   \hrule % Horizontal line
+  \smallskip
 }{
 }
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE FORMATTING
 %----------------------------------------------------------------------------------------
-
+% deprecated
 \newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
  {\bf #1} {\small #4} \hfill {#2} % Bold company name and date on the right
  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
   \\
   {\em #3}
-  }\smallskip
-
+  }
   \begin{list}{%$\cdot$
     }{\leftmargin=0em} % \cdot used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
   \vspace{0.5em} % Some space after the list of bullet points
+}
+
+\newenvironment{rExperience}[3]{ % 3 input arguments - job title - company name - date
+  \bgcolor{\threeparts{#1}{\bf #2}{#3}}
+  }{
+}
+
+\newenvironment{rProject}[3]{ % 3 input arguments - project type - project name - date
+  \bgcolor{\threeparts{#1}{\bf #2}{#3}}
+  }{
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip

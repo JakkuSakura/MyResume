@@ -1,162 +1,91 @@
-\documentclass[UTF8]{resume} % Use the custom resume.cls style
+\documentclass[UTF8]{resume}
 
 \name{邱江坤} % Your name
 \address{+86 158 6659 6952 • \href{mailto://qiujiangkun@foxmail.com}{qiujiangkun@foxmail.com} • \href{https://github.com/qiujiangkun/}{https://github.com/qiujiangkun/}}
 
-% \address{Nanledao St., Weifang, Shandong, China 261000}
+\address{实习目标: 软件开发工程师 后端方向}
 
 \begin{document}
-\begin{rSection}{专业技能}
-    自幼学习编程,9年编程经验\\
-    NOIP省一等奖\\
-    熟悉C, C++, Java, Python, Rust\\
-    了解JavaScript, HTML, PHP, C\#, SQL, Bash\\
-    熟悉Linux和git,日常使用Linux和git\\
-    了解操作系统和计算机网络\\
-    了解机器学习和深度学习
+\begin{rSection}{自我评价}
+    \textbf{编程经验}：9年编程经验，热衷开源，能够独自或合作编写上万行代码的项目\\
+    \textbf{编程语言}：熟悉C++，Java，Python，Rust，作为开发新项目的主要语言；了解JavaScript, Bash, Scala, SQL, C\#,PHP，汇编\\
+    \textbf{技术栈}：了解计算机底层，可以针对底层特点编写和优化程序；日常使用Linux和git，了解POSIX编程；了解Netty和Disruptor，了解并发编程；了解JVM调优；了解机器学习和深度学习；了解编译原理\\
 \end{rSection}
 
 \begin{rSection}{教育经历}
-    % \begin{rSubsection}{Secondary Education}{}{}{}
-    %     \item Weifang New Epoch School, Shandong Province, China \hfill Sep 2017-Jun 2020
-    %     \item Weifang Guangwen Middle School, Shandong Province, China \hfill Sep 2014-Jun 2017
-    % \end{rSubsection}
-    
-    本科: 香港科技大学(综合系统与设计(编程方向)专业) \hfill 2020年9月至今\\
-    
+    \begin{itemize}
+        \item \threeparts{本科}{香港科技大学(综合系统与设计(编程方向)专业)}{2020.9-今}
+    \end{itemize}
 \end{rSection}
 
-\begin{rSection}{工作经验}
-    \begin{rSubsection}{数字货币交易公司(保密)}{2020年7月至今}{兼职工作}{}
-        \item 用Rust从头编写一系列的库,从几十个不同的交易网站收集并处理数据
-        \item 总延迟与Apache Benchmark持平
-    \end{rSubsection}
+\begin{rSection}{实习经历}
+    \begin{rExperience}{软件开发工程师}{数字货币交易公司(保密)}{2020.07-今}
+        \textbf{项目背景}\\
+        升级现有客户端并发网络库，降低交易网站信息收集处理数据延迟\\
+        \textbf{项目内容}
+        \begin{itemize}
+            \itemsep -0.5em \vspace{-0.5em}
+            \item 搭建网络库：负责高频交易的底层数据库从0~1的搭建；使用Rust语言，运用缓存行优化和无锁队列等底层优化，实现了一套处理客户端并发的网络库，并支持多种通信协议；通过修改Webpki和Rustls等库，使其支持对IP地址的TLS的链接。；以极低的延迟从不同的交易平台收集并处理数据；正在构建基于f-stack的用户态网络库；基于UDP实现自定义协议，数据中转程序，并绕开服务器机房对于IP的限制
+            \item搭建监控系统：运用InfluxdDB和Grafana搭建监控系统
+            \item搭建绘图引擎：修改Matplotlib，支持大量数据的实时绘图，同时兼容Matplotlib所有的特性
+            \item项目成果：总延迟与Apache Benchmark持平，测试环境数据明显优化及提升。
+        \end{itemize}
+    \end{rExperience}
 \end{rSection}
-
 
 \begin{rSection}{获奖经历}
-    \begin{list}{}{
-        \setlength{\leftmargin}{0.0em}
-        \itemsep -0.5em
-      }
-
-    % \item Third Prize in the Interdisciplinary Cup in Information Technology Applications \\ in Shandong Province \hfill Dec 2018
-    
-    \item 中国计算机学会(CCF)认证学生会员 \hfill 2019年7月
-
-    \item 信息学奥赛(NOIP)提高组山东赛区一等奖 \hfill 2018/2017年11月
-    \item RoboCom2018机器人全球锦标赛金奖 \hfill 2018年7月
-    % \item First Prize in Personal Skills of RoboCom2018 Global Championship \hfill Jul 2018
-    % \item Best Programmer Prize of RoboCom2018 Global Championship \hfill Jul 2018
-    % \item Second Prize in Star of Outlook - English Talent Competition, CCTV \hfill Apr 2018
-    \item 清华大学登峰杯数据挖掘竞赛省二等奖\hfill 2018年7月
-    % \item Second Prize in China Shandong Student Maker (CSSM) Competition \hfill May 2017
-    \item 全国计算机等级考试四级网络工程师 \hfill 2016年11月
-    \item 信息学奥赛(NOIP)提高组山东赛区一等奖(第六名) \hfill 2016年10月
-    \item 第19届中国移动"和"教育杯电脑制作大赛决赛一等奖(项目第一名) \hfill 2016年7月
-    % \item 3rd in the Weifang Experimental and Practical Competition \hfill Jul 2015
-    
-    % \item Qualification Certify for National Youth Robotics Level Test, Second Class \hfill Oct 2018
-    % \item National Computer Rank Examination Level 3, Network Technology \hfill May 2016
-    % \item National Computer Rank Examination Level 2, C language \hfill Nov 2015
-    \end{list}
+    \begin{itemize}
+        \itemsep -0.5em \vspace{-0.5em}
+        \item\threeparts{一等奖}{信息学奥赛（NOIP）连续三届}{2018/2017/2016}
+        \item\threeparts{金奖}{RoboCom机器人大赛全球锦标赛}{2018.07}
+        \item\threeparts{二等奖}{清华大学登峰杯数据挖掘竞赛}{2018.07}  
+        \item\threeparts{一等奖（项目第一名）}{第19届中国移动“和”教育杯电脑制作大赛}{2016.07}
+    \end{itemize}
 \end{rSection}
 
-% \begin{rSection}{Activities}
-%     \begin{rSubsection}{DJI Robomaster Winter Camp}{Feb 2020}{Team Leader}{Online}
-%         \item Lead a team of four to develop a full set of solutions, including global and local path planning, of robot cars for tile-matching game on ROS platform.
-%         \item Ranked the first individually in algorithm group.
-%     \end{rSubsection}
-%     \begin{rSubsection}{National Olympiad in Informatics in Provinces (NOIP)}{2018, 2017, 2016}{Contestant of the High/Middle School Group}{Shandong Province, China}
-%         \item To assess secondary school participants' mastery of algorithms and data structures, NOIP is a competitive, selective, and reputable competition like ACM, granting about 200 first prizes out of 1000+ participants in each province each year. Winners can be admitted to top universities in China with high priority.
-%         \item Ranked 80th(First Prize) out of 1200+ competitors in Shandong Province and was offered the Certified Student Membership of China Computer Federation (CCF) in 2018
-%         \item Ranked 200th/1200+(First Prize) in Shandong Province in 2017
-%         \item Ranked 6th in Shandong Province in middle school group and won First Prize in 2016
-%     \end{rSubsection}
- 
-%     \begin{rSubsection}{The Hack} {Jul 2018, Jul 2019}{Team Leader}{Shanghai}
-%         \item Led a team of four to build a smart campus monitor system from scratch within 24 hours using Python and OpenCV, to detect and identify faces in the monitored areas
-%         \item Led a team of four to design a game using neural networks and evolutionary algorithms to help those with interests in further learning AI technologies
-%     \end{rSubsection}
-   
-%     \begin{rSubsection}{RoboCom Global Championship} {Jul 2018}{Team Leader}{Wuhan, Hebei Province}
-%         \item Developed a program to control robot arms to sort colored blocks and won the first prize, using Python
-%         \item Modified official SDK and enabled multi-device support
-%     \end{rSubsection}
-    
-%     \begin{rSubsection}{Dengfeng Cup Data Mining Competition} {Jul 2018}{Team Leader}{Tsinghua University}
-%         \item Analyzed parameters to predicted tendencies of estate pricing in Beijing in the next year, using traditional machine learning  and statistics methods
+\begin{rSection}{项目经历}
+    \begin{rProject}{个人项目}{Minecraft 服务器}{2020.10-今}
+        \textbf{项目概述}：开发兼容Minecraft客户端的高性能服务器后台\\
+        \textbf{开发原因}：现有的Minecraft服务器单机支持的客户端数量较低，因此希望开发一款支持高在线人数的服务器\\
+        \textbf{项目开发}：使用Scala开发，除去协议部分，完全自己重写，正在开发
+    \end{rProject}
 
-%         \item Analyzed microscopic parameters which influenced estate pricing in Beijing based on publicly released business data of Lianjia from 2011 to 2013
-%     \end{rSubsection}
+    \begin{rProject}{合作项目}{WP-Reliable MD}{2018.09-2019.10}
+        \textbf{项目概述}：由于使用的Markdown插件的原作者停止开发，将Markdown编辑器Tui-Editor成功引入WordPress插件商店，命名为\href{https://github.com/jackworkshop/WP-ReliableMD}{WP Reliable-MD}\\
+        \textbf{项目职责}
+        \begin{itemize}
+            \itemsep -0.5em \vspace{-0.5em}
+            \item 项目管理：担任组长，带领3开发团队，完成整体架构设计、技术选型和早期开发
+            \item 项目开发：使用JavaScript，针对WordPress的界面风格设计了GUI，并替换掉编辑器的渲染引擎，重写渲染模块，使其支持Tex数学公式。采用非侵入式的方法，避免造成文章内容丢失和内容不一致。
+        \end{itemize}
+        \textbf{项目成果}：多人采用WP-Reliable MD作为博客的编辑器
+    \end{rProject}
 
-%     \begin{rSubsection}{Knowledge Discovery and Data Mining Cup 2018}{Apr 2018} {Team Leader} { Online, Global}
-%         \item Predicted concentrations of three pollutants at 48 monitoring stations scattering in Beijing and London
-%         \item Adopted neural network models 
-%         \item Ranked 106/1000+
-%     \end{rSubsection}
-    
-    
-%     \begin{rSubsection}{China Shandong Student Maker (CSSM) Competition} {Nov 2017} {Contestant}{ Jinan, Shandong Province}
-%         \item On Auduino, completed the development of a tracking car with automatic routing features in a designated maze within three days
-%         \item Won Second Prize in the competition
-%     \end{rSubsection}
+    % \begin{rProject}{个人项目}{Escape射击游戏}{2020.02}
+    %     \textbf{项目概述}：作为AI的训练环境和体验游戏，2D鸟瞻视角射击游戏项目\\
+    %     \textbf{游戏设计}：该游戏需要大量AI互动，需要一定的物理特效和性能需求\\
+    %     \textbf{项目开发}：游戏主打功能性，用C++17开发，采用Entt ECS框架，Box2D作为物理引擎，LUA作为脚本引擎，使用模板+多态开发出序列化库，在开发过程极大地提升了C++开发能力
+    % \end{rProject}
 
-%     \begin{rSubsection} {19th National He Education Cup Computer Final Competition} {Jul 2016} {Contestant}{Luoyang, Henan Province}
-%         \item Adopted searching algorithm to build a Tetris game with AI mode, which gained the first award, in C language
-%     \end{rSubsection}
-    
-% \end{rSection}
+    % \begin{rProject}{个人项目}{英语文章阅读器}{2019.04}
+    %     \textbf{项目概述}：帮助非英语母语在网站上阅读英语文章时，查阅单词，生成背诵表而开发的网页端应用\\
+    %     \textbf{功能设计}：主要功能包含全文翻译，选词翻译和自动查询功能，可以导出单词表和标记掌握的词汇\\
+    %     \textbf{项目开发}：使用Python Flask作为后端，前端采用Semantic UI和jQuery
+    % \end{rProject}
 
-\begin{rSection}{编程项目}
-    
-\begin{rSubsection}{\href{https://github.com/jackworkshop/WP-ReliableMD}{WP Reliable-MD}}{2018年9月 - 2019年10月}{合作项目}{}
-    \item 将Markdown编辑器Tui-Editor引入WordPress插件商店
-    \item 负责前端编程,使用Javascript
-\end{rSubsection}
-
-\begin{rSubsection}{\href{https://github.com/qiujiangkun/Escape}{Escape游戏}}{2020年2月}{个人项目}{}
-    \item 一个2D鸟瞻视角设计游戏,作为AI的训练环境
-    \item 采用C++, Lua, ECS, Serialization, Box2D, 模板元编程.
-\end{rSubsection}
-\begin{rSubsection}{\href{https://github.com/qiujiangkun/EnglishPassageReader}{英语文章阅读器}}{2019年4月}{个人项目}{}
-    \item 帮助非英语母语的人阅读英语文章,免去查词典的麻烦的的网页端应用
-    \item 使用Python Flask, JavaScript和HTML
-\end{rSubsection}
-
-\begin{rSubsection}{\href{https://github.com/qiujiangkun/ZhuoxinSocialWebsite}{卓信社交平台}} {2018年10月}{个人项目}{}
-
-\item 仿照PenPal World和Facebook开发的简单的社交平台
-\item 使用了PHP, HTML, JavaScript, MySQL, Semantic UI
-\item 开发时注意了网络安全问题
-
-\end{rSubsection}
-
-% \begin{rSubsection}{Research on How Family Background Influences Personality of High School Students}{Oct 2017}{Personal Project}{}
-
-% \item Designed a questionnaire for the chosen topic and randomly surveyed over a hundred individuals
-
-% \item Generated a summary report, analyzing and discussing how different varieties will affect children’s emotional and mental development before entering high school
-% \end{rSubsection}
+    % \begin{rProject}{个人项目}{卓信社交平台}{2018.08}
+    %     \textbf{项目概述}：仿照Facebook和Penpal World开发的简单的社交平台\\
+    %     \textbf{功能设计}：用户注册、登录、关联QQ、发帖、关注、个人资料编辑、广场、搜索用户、后台\\
+    %     \textbf{项目开发}：采用的技术有PHP，HTML，JavaScript，MySQL，Semantic UI
+    % \end{rProject}
 \end{rSection}
-% \begin{rSection}{Leadership Experiene}
-%  \begin{rSubsection}{Informatics Club, Weifang New Epoch School}{Sep 2017 - Nov 2018}{President}{}
-%  \item Responsible for new member recruitment, training and tutoring
-%  \end{rSubsection}
-%  \begin{rSubsection}{Informatics Club, Weifang Guangwen Middle School}{Sep 2016 - Jun 2017}{President}{}
-%  \item Responsible for new member recruitment, training and tutoring
-%  \end{rSubsection}
-% \end{rSection}
 
-% \begin{rSection}{SCHOOL AWARDS} \itemsep -3pt
-%  \item New Epoch School Star (Highest School-level Award), Weifang New Epoch School \hfill Mar 2018	
-%  \item Excellent Academic Achievement Award, Weifang New Epoch School \hfill Dec 2017
-%  \item Academic Advancement Award, Weifang New Epoch School \hfill Dec 2017
-%  \item Versatile Talent Award, Weifang New Epoch School \hfill May 2017, Dec 2017
-%  \item Gold Award in All-round Development, Weifang New Epoch School \hfill Dec 2017
-%  \item Rising Star Award, Weifang New Epoch School \hfill Dec 2017
-%  \item Innovative Practice Award, Weifang New Epoch School \hfill May 2017
- 
-% \end{rSection}
-
+\begin{rSection}{资格认证}
+    \begin{itemize}
+        \itemsep -0.5em \vspace{-0.5em}
+        \item\threeparts{总分106}{托福英语考试}{2019.10}
+        \item\threeparts{认证学生会员}{中国计算机学会}{2019.07}
+        \item\threeparts{四级网络工程师}{全国计算机等级考试}{2016.11}
+    \end{itemize}
+\end{rSection}
 \end{document}
