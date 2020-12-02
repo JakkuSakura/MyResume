@@ -125,12 +125,12 @@
 }
 
 \newenvironment{rExperience}[3]{ % 3 input arguments - job title - company name - date
-  \bgcolor{\threeparts{#1}{\bf #2}{#3}}
+  \bgcolor{\threeparts{#1}{#2}{#3}}
   }{
 }
 
 \newenvironment{rProject}[3]{ % 3 input arguments - project type - project name - date
-  \bgcolor{\threeparts{#1}{\bf #2}{#3}}
+  \bgcolor{\threeparts{#1}{#2}{#3}}
   }{
 }
 
