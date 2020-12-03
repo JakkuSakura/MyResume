@@ -3,9 +3,15 @@
 \LoadClass[10pt,letterpaper]{article} % Font size and paper type
 
 \usepackage[parfill]{parskip} % Remove paragraph indentation
-
+\usepackage{graphicx}
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\usepackage{fontspec}
+\usepackage{fontawesome5}
 
 \pagestyle{empty} % Suppress page numbers
 \usepackage{fontspec}
@@ -14,7 +20,6 @@
 \usepackage[left=0.6in,top=0.6in,right=0.6in,bottom=0.6in]{geometry} % Document margins
 
 \setsansfont{DejaVu Serif}
-\setmonofont{Noto Sans Mono CJK SC}
 
 \usepackage{xeCJK}
 \setCJKmainfont{SimSun}
