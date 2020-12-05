@@ -107,7 +107,7 @@
   {\bf \large \texttt{#1}} % Section title
   \smallskip
   \hrule % Horizontal line
-  \smallskip
+
 }{
 }
 
