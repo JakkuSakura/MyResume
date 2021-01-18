@@ -1,170 +1,111 @@
 \documentclass{resume} % Use the custom resume.cls style
 
-\name{Jiangkun Qiu} % Your name
-\address{+86 158 6659 6952 • \href{mailto://qiujiangkun@foxmail.com}{qiujiangkun@foxmail.com} • \href{https://github.com/qiujiangkun/}{https://github.com/qiujiangkun/}}
-
-% \address{Nanledao St., Weifang, Shandong, China 261000}
+\name{Jiangkun QIU}
+\address{\faPhone~+86 158 6659 6952 \faEnvelope~\href{mailto://qiujiangkun@foxmail.com}{qiujiangkun@foxmail.com} \faGithub~\href{https://github.com/qiujiangkun/}{GitHub: qiujiangkun} \faWeixin~rocon2001 ~~~~~}
+\address{Internship Target: Backend Development}
 
 \begin{document}
-\begin{rSection}{Skill Set}
-    Programming experience for 9 years since 10\\
-    Trained intensively in algorithms and data structures and get awards in Informatics\\
-    Familiar with C, C++, Java, Python, and Rust\\
-    Basic experience in JavaScript, HTML, PHP, C\#, SQL, Bash\\
-    Hands-on experience in Linux and git on daily basis for years\\
-    Comprehend operating system, network\\
-    Understand machine learning and deep learning
+
+\begin{tikzpicture}[remember picture, overlay] 
+    \node[anchor = north east] at ($(current page.north east)+(-1.3cm,-1.2cm)$) {\includegraphics[height=2.5cm]{avatar.jpg}};
+  \end{tikzpicture}
+
+\begin{rSection}{\faCogs~Skill Set}
+    \begin{itemize}
+        \itemsep -0.5em \vspace{-0.5em}
+        \item Programming experience for 9 years since 10
+        \item Trained intensively in algorithms and data structures and get awards in Informatics
+        \item Familiar with C, C++, Java, Python, Rust and Scala
+        \item Basic experience in JavaScript, HTML, PHP, C\#, SQL, Bash
+        \item Hands-on experience in Linux and git on daily basis for years
+        \item Comprehend operating system, network, machine learning, deep learning, Kafka, K8S, Netty, Disruptor, concurrent programming, JVM optimization, compiler theory
+    \end{itemize}
+    
 \end{rSection}
 
-\begin{rSection}{Education}
+\begin{rSection}{\faGraduationCap~Education}
     % \begin{rSubsection}{Secondary Education}{}{}{}
     %     \item Weifang New Epoch School, Shandong Province, China \hfill Sep 2017-Jun 2020
     %     \item Weifang Guangwen Middle School, Shandong Province, China \hfill Sep 2014-Jun 2017
     % \end{rSubsection}
-    Hong Kong University of Science and Technology, China \hfill Since Sep 2020 \\ Integrated System and Design(Programming) major
+    Hong Kong University of Science and Technology, China \hfill Sep 2020-Now \\ Integrated System and Design(Programming) major
 \end{rSection}
 
-\begin{rSection}{Working Experienes}
-    \begin{rSubsection}{A quantitative trading company of digital currencies, under confidentiality agreement}{Since Jul, 2020}{Part-time Job}{}
-        \item Developed, from scratch in Rust, a set of libraries to collect and process data from dozens of trading platforms.
-        \item Set up a web-based monitoring system
-        \item Outperform Apache Benchmark, even with data processing
-\end{rSubsection}
+\begin{rSection}{\faUsers~Working Experienes}
+    \begin{rExperience}{Backend Internship}{Shanghai Rangchuan Information Technology Co., Ltd.}{Dec 2020-Now}
+        \begin{itemize}
+            \itemsep -0.5em \vspace{-0.5em}
+            \item Distributed Rate Limiter: Implemented  a modified version of the Sliding Log algorithm With Akka and Redis, to restrict service usage for each user and API. This solved the incapacity that distributed nodes cannot constrict use rate within a small number after load balancing with Ingress in K8S
+            \item WeChat Work Third Party Application：Developed a WeChat Enterprise third-party App prototype with Python to boost intelligent hiring
+            \item Slow Speed Refresh Service：Read changelog from PostgreSQL，clense changelog for each tenant company and write to different Kafka topics according to configuration；Implement a Slow Speed Refresh Queue and its Web Dashboard for internal use with restricted SQL injection
+        \end{itemize}
+    \end{rExperience}
+    \begin{rExperience}{Part-time Job}{A quantitative trading company of digital currencies}{Jul 2020-Now}
+        \begin{itemize}
+            \itemsep -0.5em \vspace{-0.5em}
+            \item Developed, from scratch in Rust, a set of libraries to collect and process data from dozens of trading platforms.
+            \item Set up a web-based monitoring system
+            \item Outperform Apache Benchmark, even with data processing
+        \end{itemize}
+    \end{rExperience}
 
 \end{rSection}
-\begin{rSection}{Awards and Certifications in Computer Science}
-    \begin{list}{}{
-        \setlength{\leftmargin}{0.0em}
-        \itemsep -0.5em
-      }
-
-    % \item Third Prize in the Interdisciplinary Cup in Information Technology Applications \\ in Shandong Province \hfill Dec 2018
+\begin{rSection}{\faAward~Awards and Certifications}
     
-    \item China Computer Federation Certified Student Member \hfill Since Jul 2019
+    \begin{itemize}
+        \itemsep -0.5em \vspace{-0.5em}
 
-    \item First Prize in the High School Group of National Informatics Olympiad in Provinces \hfill Nov 2017, Nov 2018
-    \item Gold Award of RoboCom2018 Global Championship(Robot Competition) \hfill Jul 2018
-    % \item First Prize in Personal Skills of RoboCom2018 Global Championship \hfill Jul 2018
-    % \item Best Programmer Prize of RoboCom2018 Global Championship \hfill Jul 2018
-    % \item Second Prize in Star of Outlook - English Talent Competition, CCTV \hfill Apr 2018
-    \item Second Prize in 2017 Tsinghua University Dengfeng Cup Data Mining Competition \hfill Jul 2018
-    % \item Second Prize in China Shandong Student Maker (CSSM) Competition \hfill May 2017
-    \item National Computer Rank Examination Level 4, Network Engineer \hfill Nov 2016
-    \item First Prize(6th) in the Middle School Group of National Informatics Olympiad in Provinces \hfill Oct 2016
-    \item First Prize(1st) in national finals of 19th He Education Cup Computer Competition \hfill Jul 2016
-    % \item 3rd in the Weifang Experimental and Practical Competition \hfill Jul 2015
-    
-    % \item Qualification Certify for National Youth Robotics Level Test, Second Class \hfill Oct 2018
-    % \item National Computer Rank Examination Level 3, Network Technology \hfill May 2016
-    % \item National Computer Rank Examination Level 2, C language \hfill Nov 2015
-    \end{list}
+        % \item Third Prize in the Interdisciplinary Cup in Information Technology Applications \\ in Shandong Province \hfill Dec 2018
+        \item China Computer Federation Certified Student Member \hfill Jul 2019-Now
+
+        \item First Prize in the High School Group of National Informatics Olympiad in Provinces \hfill Nov 2017, Nov 2018
+        \item Gold Award of RoboCom2018 Global Championship(Robot Competition) \hfill Jul 2018
+        % \item First Prize in Personal Skills of RoboCom2018 Global Championship \hfill Jul 2018
+        % \item Best Programmer Prize of RoboCom2018 Global Championship \hfill Jul 2018
+        % \item Second Prize in Star of Outlook - English Talent Competition, CCTV \hfill Apr 2018
+        \item Second Prize in 2017 Tsinghua University Dengfeng Cup Data Mining Competition \hfill Jul 2018
+        % \item Second Prize in China Shandong Student Maker (CSSM) Competition \hfill May 2017
+        \item National Computer Rank Examination Level 4, Network Engineer \hfill Nov 2016
+        \item First Prize(6th) in the Middle School Group of National Informatics Olympiad in Provinces \hfill Oct 2016
+        \item First Prize(1st) in national finals of 19th He Education Cup Computer Competition \hfill Jul 2016
+        % \item 3rd in the Weifang Experimental and Practical Competition \hfill Jul 2015
+        
+        % \item Qualification Certify for National Youth Robotics Level Test, Second Class \hfill Oct 2018
+        % \item National Computer Rank Examination Level 3, Network Technology \hfill May 2016
+        % \item National Computer Rank Examination Level 2, C language \hfill Nov 2015
+    \end{itemize}
 \end{rSection}
 
-% \begin{rSection}{Activities}
-%     \begin{rSubsection}{DJI Robomaster Winter Camp}{Feb 2020}{Team Leader}{Online}
-%         \item Lead a team of four to develop a full set of solutions, including global and local path planning, of robot cars for tile-matching game on ROS platform.
-%         \item Ranked the first individually in algorithm group.
-%     \end{rSubsection}
-%     \begin{rSubsection}{National Olympiad in Informatics in Provinces (NOIP)}{2018, 2017, 2016}{Contestant of the High/Middle School Group}{Shandong Province, China}
-%         \item To assess secondary school participants' mastery of algorithms and data structures, NOIP is a competitive, selective, and reputable competition like ACM, granting about 200 first prizes out of 1000+ participants in each province each year. Winners can be admitted to top universities in China with high priority.
-%         \item Ranked 80th(First Prize) out of 1200+ competitors in Shandong Province and was offered the Certified Student Membership of China Computer Federation (CCF) in 2018
-%         \item Ranked 200th/1200+(First Prize) in Shandong Province in 2017
-%         \item Ranked 6th in Shandong Province in middle school group and won First Prize in 2016
-%     \end{rSubsection}
- 
-%     \begin{rSubsection}{The Hack} {Jul 2018, Jul 2019}{Team Leader}{Shanghai}
-%         \item Led a team of four to build a smart campus monitor system from scratch within 24 hours using Python and OpenCV, to detect and identify faces in the monitored areas
-%         \item Led a team of four to design a game using neural networks and evolutionary algorithms to help those with interests in further learning AI technologies
-%     \end{rSubsection}
-   
-%     \begin{rSubsection}{RoboCom Global Championship} {Jul 2018}{Team Leader}{Wuhan, Hebei Province}
-%         \item Developed a program to control robot arms to sort colored blocks and won the first prize, using Python
-%         \item Modified official SDK and enabled multi-device support
-%     \end{rSubsection}
-    
-%     \begin{rSubsection}{Dengfeng Cup Data Mining Competition} {Jul 2018}{Team Leader}{Tsinghua University}
-%         \item Analyzed parameters to predicted tendencies of estate pricing in Beijing in the next year, using traditional machine learning  and statistics methods
-
-%         \item Analyzed microscopic parameters which influenced estate pricing in Beijing based on publicly released business data of Lianjia from 2011 to 2013
-%     \end{rSubsection}
-
-%     \begin{rSubsection}{Knowledge Discovery and Data Mining Cup 2018}{Apr 2018} {Team Leader} { Online, Global}
-%         \item Predicted concentrations of three pollutants at 48 monitoring stations scattering in Beijing and London
-%         \item Adopted neural network models 
-%         \item Ranked 106/1000+
-%     \end{rSubsection}
-    
-    
-%     \begin{rSubsection}{China Shandong Student Maker (CSSM) Competition} {Nov 2017} {Contestant}{ Jinan, Shandong Province}
-%         \item On Auduino, completed the development of a tracking car with automatic routing features in a designated maze within three days
-%         \item Won Second Prize in the competition
-%     \end{rSubsection}
-
-%     \begin{rSubsection} {19th National He Education Cup Computer Final Competition} {Jul 2016} {Contestant}{Luoyang, Henan Province}
-%         \item Adopted searching algorithm to build a Tetris game with AI mode, which gained the first award, in C language
-%     \end{rSubsection}
-    
-% \end{rSection}
-
-% \begin{rSection}{Technical Strengths}
-
-% \begin{tabular}{ @{} >{\bfseries}l m{30em} }
-%  ProgrammingLanguage & C, C++, Java, Python, JavaScript, Octave, MySQL, Bash Script, NodeJS, JQuery, SCSS, JSON, AngularJS, TypeScript, Coffee Script, Rust, C\#, Unity3D \\ \\
-%  Skills & Network, Machine Learning, Web Programming, Algorithms, Data Structure, OS Principle, Statistics, Software Engineering, Game Programming, Robotics, Compiler Principles, Arduino, RasberryPi\\
-% \end{tabular}
-
-% \end{rSection}
-
-\begin{rSection}{PROJECTS}
+\begin{rSection}{\faUsers~Projects}
     % TODO add a Java backend project
-\begin{rSubsection}{\href{https://github.com/jackworkshop/WP-ReliableMD}{WP Reliable-MD}}{Sep, 2018 - Oct, 2019}{Collaborated Project}{}
-    \item Introduced Tui-Editor, a Markdown editor, to WordPress Plugin Market
-    \item In charge of front-end coding
-\end{rSubsection}
+    \begin{rProject}{Collaborated Project}{WP-Reliable MD}{Sep 2018-Aug 2019}
+        \textbf{Reasons}: Since the Markdown plugin I was using ceased to develop, my friends and I managed to introduce the Markdown Tui-Editor to WordPress Plugin Marketplace\\
+        \textbf{Duties}
+        \begin{itemize}
+            \itemsep -0.5em \vspace{-0.5em}
+            \item Project Management: As the team leader, I proposed the overall architecture and technical choice. I was also in charge of early development
+            \item Project Development: Redesign the GUI for Tui-Editor and replaced the original editor of WordPress. Adopted a RESTful API to render MarkDown text to work around the incapacity of rendering LaTeX math equations in places other than plaintext. Use a non-intrusive approach to avoid data lose and inconsistency when the plugin is down.
+        \end{itemize}
+    \end{rProject}
 
-\begin{rSubsection}{\href{https://github.com/qiujiangkun/Escape}{Escape Game}}{Feb 2020}{Personal Project}{}
-    \item A 2D bird-view shooting game designed as an AI playground.
-    \item Adopted C++, Lua, ECS, Serialization, Box2D, Meta Template Programming.
-    \item 5k code in total
-\end{rSubsection}
-\begin{rSubsection}{\href{https://github.com/qiujiangkun/EnglishPassageReader}{English Passage Reader}}{Apr 2019}{Personal Project}{}
-    \item A web application aimed to help non-native English speakers read English.
-    \item Applied Python Flask, JavaScript and HTML
-\end{rSubsection}
-
-\begin{rSubsection}{\href{https://github.com/qiujiangkun/ZhuoxinSocialWebsite}{Zhuoxin Social Platform}} {Oct 2018}{Personal Project}{}
-
-\item Developed a website like PenPal World and Facebook, from scratch, with full functionality.
-
-\item Applied PHP, HTML, JavaScript, MySQL, and Semantic UI and concepts of network security and abstraction.
-
-\end{rSubsection}
-
-% \begin{rSubsection}{Research on How Family Background Influences Personality of High School Students}{Oct 2017}{Personal Project}{}
-
-% \item Designed a questionnaire for the chosen topic and randomly surveyed over a hundred individuals
-
-% \item Generated a summary report, analyzing and discussing how different varieties will affect children’s emotional and mental development before entering high school
+% \begin{rSubsection}{\href{https://github.com/qiujiangkun/Escape}{Escape Game}}{Feb 2020}{Personal Project}{}
+%     \item A 2D bird-view shooting game designed as an AI playground.
+%     \item Adopted C++, Lua, ECS, Serialization, Box2D, Meta Template Programming.
+%     \item 5k code in total
 % \end{rSubsection}
-\end{rSection}
-% \begin{rSection}{Leadership Experiene}
-%  \begin{rSubsection}{Informatics Club, Weifang New Epoch School}{Sep 2017 - Nov 2018}{President}{}
-%  \item Responsible for new member recruitment, training and tutoring
-%  \end{rSubsection}
-%  \begin{rSubsection}{Informatics Club, Weifang Guangwen Middle School}{Sep 2016 - Jun 2017}{President}{}
-%  \item Responsible for new member recruitment, training and tutoring
-%  \end{rSubsection}
-% \end{rSection}
+% \begin{rSubsection}{\href{https://github.com/qiujiangkun/EnglishPassageReader}{English Passage Reader}}{Apr 2019}{Personal Project}{}
+%     \item A web application aimed to help non-native English speakers read English.
+%     \item Applied Python Flask, JavaScript and HTML
+% \end{rSubsection}
 
-% \begin{rSection}{SCHOOL AWARDS} \itemsep -3pt
-%  \item New Epoch School Star (Highest School-level Award), Weifang New Epoch School \hfill Mar 2018	
-%  \item Excellent Academic Achievement Award, Weifang New Epoch School \hfill Dec 2017
-%  \item Academic Advancement Award, Weifang New Epoch School \hfill Dec 2017
-%  \item Versatile Talent Award, Weifang New Epoch School \hfill May 2017, Dec 2017
-%  \item Gold Award in All-round Development, Weifang New Epoch School \hfill Dec 2017
-%  \item Rising Star Award, Weifang New Epoch School \hfill Dec 2017
-%  \item Innovative Practice Award, Weifang New Epoch School \hfill May 2017
- 
-% \end{rSection}
+% \begin{rSubsection}{\href{https://github.com/qiujiangkun/ZhuoxinSocialWebsite}{Zhuoxin Social Platform}} {Oct 2018}{Personal Project}{}
+
+% \item Developed a website like PenPal World and Facebook, from scratch, with full functionality.
+
+% \item Applied PHP, HTML, JavaScript, MySQL, and Semantic UI and concepts of network security and abstraction.
+
+% \end{rSubsection}
+
+\end{rSection}
 
 \end{document}
