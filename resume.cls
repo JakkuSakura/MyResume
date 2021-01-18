@@ -22,8 +22,9 @@
 \setsansfont{DejaVu Serif}
 
 \usepackage{xeCJK}
-\setCJKmainfont{SimSun}
-\setCJKmonofont{SimSun} 
+\setCJKmainfont{SimSun}[AutoFakeBold] %对应rm罗马
+\setCJKsansfont{SimHei}[AutoFakeBold] %对应sf无衬线
+\setCJKmonofont{FangSong}[AutoFakeBold] %对应tt打字机
 
 
 \newcommand\threeparts[4][t]{
