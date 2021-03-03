@@ -4,20 +4,18 @@
 \address{\faPhone~+86 158 6659 6952 \faEnvelope~\href{mailto://qiujiangkun@foxmail.com}{qiujiangkun@foxmail.com} \faGithub~\href{https://github.com/qiujiangkun/}{GitHub: qiujiangkun} \faWeixin~rocon2001~~~~~}
 \address{实习目标: 后端开发}
 
-
 \begin{document}
 
 \begin{tikzpicture}[remember picture, overlay] 
     \node[anchor = north east] at ($(current page.north east)+(-1.3cm,-1.2cm)$) {\includegraphics[height=2.5cm]{avatar.jpg}};
-  \end{tikzpicture}
+\end{tikzpicture}
   
-
 \begin{rSection}{\faCogs~编程经验}
     \begin{itemize}
-        \itemsep -0.5em \vspace{-0.5em}
+        \itemsep -0.5em
         \item 9年编程经验，热衷开源，能够独自或合作编写上万行代码的项目
         \item 熟悉C++、Java、Python、Rust、Scala; 了解JavaScript、Bash、SQL、C\#、PHP、汇编
-        \item 熟悉Linux, git、计算机底层、机器学习、深度学习；了解Kafka、K8S、Netty、Disruptor、并发编程、JVM调优、编译原理
+        \item 熟悉Linux、git、机器学习、深度学习；了解Kafka、K8S、Netty、PostgreSQL、Redis、Disruptor、并发编程、JVM调优、编译原理
     \end{itemize}
     
 \end{rSection}
@@ -32,23 +30,24 @@
         \textbf{实习内容}
         \begin{itemize}
             \itemsep -0.5em \vspace{-0.5em}
-            \item 搭建分布式限流器：利用Akka和Redis和经过修改过的滑动日志法，搭建分布式限流器，针对每个用户和每个API限速，解决了经过ingress负载均衡后各节点上Akka Stream无法将流量限制到较小的数目的问题
+            \item 搭建分布式限流器：利用Akka和Redis和经过修改过的滑动日志法，搭建分布式限流器，针对每个用户和每个API限速，解决了经过Ingress负载均衡后各节点上Akka Stream无法将流量限制到较小的数目的问题
             \item 对接企业微信应用：用Python开发企业微信第三方应用原型，打通智能招聘的添加联系方式和发放招聘资料环节
             \item 低速刷新服务：从PostgreSQL读取变更日志，清洗出每个租户的变更数据，根据每个租户限速配置，写入不同Kafka topics；实现供运维使用的低速刷新任务队列和Web控制台，以受限SQL注入的形式配置低速刷新任务队列
+            \item 地理位置匹配服务：使用Rust WASM重写位置匹配服务，实现trie数据结构，部署在AWS Lambda上
+            \item 重建测试环境：由于技术升级，将旧版本的基于Play Framework的测试样例迁移到到ZIO Test
         \end{itemize}
     \end{rExperience}
-    \begin{rExperience}{软件开发工程师}{数字货币交易公司(保密)}{2020.07-今}
+    \begin{rExperience}{兼职软件开发工程师}{数字货币交易公司(保密)}{2020.07-今}
         \textbf{项目背景}:
         升级现有客户端并发网络库，降低交易网站信息收集处理数据延迟，编写高频交易的底层库\\
         \textbf{项目内容}
         \begin{itemize}
             \itemsep -0.5em \vspace{-0.5em}
-            \item 搭建网络库：使用Rust语言，运用缓存行优化和无锁队列等底层优化，实现客户端并发的网络库，并支持多种通信协议；通过修改Webpki和Rustls等库，支持对IP地址的TLS的链接；以极低的延迟从不同的交易平台收集并处理数据；正在构建基于f-stack的用户态网络库；基于UDP实现转发器，绕开服务器机房对于IP的限制；支持Arm架构和x86架构
+            \item 搭建基础设施：使用Rust语言，运用缓存行优化和Ring Buffer等底层优化，实现1:1线程模型和异步框架，将线程绑定在CPU物理核心上，大幅提高系统性能；基于UDP实现转发器，绕开服务器机房对于IP的限制；同时支持Arm架构和x86架构,Linux和MacOS系统
             \item 搭建监控系统：运用InfluxdDB和Grafana搭建监控系统，实时监控不同交易平台数据采集处理情况
-            \item 搭建绘图引擎：修改Matplotlib，支持大量数据的实时绘图，同时兼容Matplotlib所有的特性
-            \item 搭建分布式回测系统：搭建K8S回测集群，利用kafka和PostgreSQL完成回测系统的数据输入和收集
-            \item 实现JSON解析库：用过程宏、CPU缓存、减少缺页错误和数据特征，将JSON反序列化效率提高到原来8倍，快于Serde库一倍
-            \item 项目成果：总延迟与Apache Benchmark持平，测试环境数据明显优化及提升
+            \item 搭建绘图引擎：利用Python Dash搭建Web端绘图控制平台，前端采用React JS，后端使用Flask
+            \item 搭建分布式回测系统：低延迟从不同的数字货币交易平台收集并处理数据，将数据输出到Kafka，用Ansible实现AWS上自动扩容和派发任务，用PostgreSQL+TimescaleDB收集分析回测结果；实现Kafka在AWS S3上的部署
+            \item 实现JSON解析库：用过程宏、CPU缓存、减少缺页错误和数据特征，将JSON反序列化效率提高到原来8倍，快于serde库一倍
         \end{itemize}
     \end{rExperience}
 \end{rSection}
@@ -61,16 +60,14 @@
     %     \textbf{开发原因}：现有的Minecraft服务器单机支持的客户端数量较低，因此希望开发一款支持高在线人数的服务器\\
     %     \textbf{项目开发}：使用Scala开发，除去协议部分，完全自己重写，正在开发
     % \end{rProject}
+    \begin{rProject}{个人项目}{Kafcat──Kafka命令行工具}{2021.3-今}
+        \textbf{项目概述}：现有工具kafkacat的功能不够强大，提交Pull Request后发现代码难以维护，也不在积极开发，于是新建立项目，采用新语言和架构开发\\
+        \textbf{项目开发}：使用Rust开发，完全使用异步编程，支持librdkafka和rust-kafka两个实现，支持topic之间复制，topic导出导出为json，利用管道使针对标准输入输出的程序使用Kafka
+    \end{rProject}
 
     \begin{rProject}{合作项目}{WP-Reliable MD}{2018.09-2019.10}
-        \textbf{项目概述}：某Markdown插件的原作者停止开发，于是将Markdown编辑器Tui-Editor成功引入WordPress插件商店\\
-        \textbf{项目职责}
-        \begin{itemize}
-            \itemsep -0.5em \vspace{-0.5em}
-            \item 项目管理：担任组长，带领3开发团队，完成整体架构设计、技术选型和早期开发
-            \item 项目开发：使用JavaScript，针对WordPress的界面风格设计了GUI，并替换掉编辑器的渲染引擎，重写渲染模块，使其支持Tex数学公式。采用非侵入式的方法，避免造成文章内容丢失和内容不一致。
-        \end{itemize}
-        \textbf{项目成果}：多人采用WP-Reliable MD作为博客的编辑器
+        \textbf{项目概述}：原自用Wordpress Markdown插件的原作者停止开发，于是将Markdown编辑器Tui-Editor成功引入WordPress插件商店\\
+        \textbf{项目开发}：使用JavaScript，针对WordPress的界面风格设计了GUI，并替换掉编辑器的渲染引擎，重写渲染模块，使其支持Tex数学公式。采用非侵入式的方法，避免造成文章内容丢失和内容不一致。
     \end{rProject}
 
     % \begin{rProject}{个人项目}{Escape射击游戏}{2020.02}
@@ -94,7 +91,7 @@
 
 \begin{rSection}{\faAward~获奖经历~资格认证}
     \begin{itemize}
-        \itemsep -0.5em \vspace{-0.5em}
+        \itemsep -0.5em
         \item 托福英语考试~总分106(听力29,阅读30,口语21，写作26) \hfill 2019.10
         \item 中国计算机学会~认证学生会员 \hfill 2019.07
         \item RoboCom机器人大赛全球锦标赛~一等奖 \hfill 2018.07

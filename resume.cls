@@ -1,4 +1,4 @@
-\ProvidesClass{resume}[2010/07/10 v0.9 Resume class]
+\ProvidesClass{resume}[Resume class]
 
 \LoadClass[10pt,letterpaper]{article} % Font size and paper type
 
@@ -15,8 +15,7 @@
 
 \pagestyle{empty} % Suppress page numbers
 \usepackage{fontspec}
-\usepackage[colorlinks,linkcolor=blue,urlcolor=blue
-]{hyperref}
+\usepackage[colorlinks,linkcolor=blue,urlcolor=blue]{hyperref}
 \usepackage[left=0.6in,top=0.6in,right=0.6in,bottom=0.6in]{geometry} % Document margins
 
 \setsansfont{DejaVu Serif}
@@ -96,6 +95,7 @@
     \printaddress{\@addresstwo}}
      \@ifundefined{@addressthree}{}{ % Print the third address if specified
     \printaddress{\@addressthree}}
+    \vspace{-2.3em}
 }
 
 %----------------------------------------------------------------------------------------
@@ -108,26 +108,8 @@
   {\bf \large \texttt{#1}} % Section title
   \smallskip
   \hrule % Horizontal line
-
+  \vspace{-0.5em}
 }{
-}
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE FORMATTING
-%----------------------------------------------------------------------------------------
-% deprecated
-\newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\bf #1} {\small #4} \hfill {#2} % Bold company name and date on the right
- \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-  \\
-  {\em #3}
-  }
-  \begin{list}{%$\cdot$
-    }{\leftmargin=0em} % \cdot used for bullets, no indentation
-   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
-  }{
-  \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
 }
 
 \newenvironment{rExperience}[3]{ % 3 input arguments - job title - company name - date
@@ -143,6 +125,6 @@
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
 \def\namesize{\LARGE} % Size of the name at the top of the document
 \def\addressskip{\smallskip} % The space between the two address (or phone/email) lines
-\def\sectionlineskip{\medskip} % The space above the horizontal line for each section 
-\def\nameskip{\bigskip} % The space after your name at the top
+\def\sectionlineskip{\smallskip} % The space above the horizontal line for each section 
+\def\nameskip{\smallskip} % The space after your name at the top
 \def\sectionskip{\medskip} % The space after the heading section
