@@ -13,9 +13,9 @@
 \begin{rSection}{\faCogs~编程经验}
     \begin{itemize}
         \itemsep -0.5em
-        \item 9年编程经验，热衷开源，能够独自或合作编写上万行代码的项目
-        \item 熟悉C++、Java、Python、Rust、Scala; 了解JavaScript、Bash、SQL、C\#、PHP、汇编
-        \item 熟悉Linux、git、机器学习、深度学习；了解Kafka、K8S、Netty、PostgreSQL、Redis、Disruptor、并发编程、JVM调优、编译原理
+        \item 自小学5年级起开始学习编程，热衷开源，能够独自或合作编写上万行代码的项目，半工半读
+        \item 熟悉C++、Java、Python、Rust、Scala、Solidity; 了解JavaScript、Bash、SQL、C\#、PHP、汇编
+        \item 熟悉Linux、git、web3、机器学习、深度学习；了解Kafka、K8S、Netty、PostgreSQL、Redis、Disruptor、并发编程、JVM调优、编译原理
     \end{itemize}
     
 \end{rSection}
@@ -31,13 +31,13 @@
         \begin{itemize}
             \itemsep -0.5em \vspace{-0.5em}
             \item 搭建分布式限流器：利用Akka和Redis和经过修改过的滑动日志法，搭建分布式限流器，针对每个用户和每个API限速，解决了经过Ingress负载均衡后各节点上Akka Stream无法将流量限制到较小的数目的问题
-            \item 对接企业微信应用：用Python开发企业微信第三方应用原型，打通智能招聘的添加联系方式和发放招聘资料环节
+            % \item 对接企业微信应用：用Python开发企业微信第三方应用原型，打通智能招聘的添加联系方式和发放招聘资料环节
             \item 低速刷新服务：从PostgreSQL读取变更日志，清洗出每个租户的变更数据，根据每个租户限速配置，写入不同Kafka topics；实现供运维使用的低速刷新任务队列和Web控制台，以受限SQL注入的形式配置低速刷新任务队列
             \item 地理位置匹配服务：使用Rust WASM重写位置匹配服务，实现trie数据结构，部署在AWS Lambda上
             \item 重建测试环境：由于技术升级，将旧版本的基于Play Framework的测试样例迁移到到ZIO Test
         \end{itemize}
     \end{rExperience}
-    \begin{rExperience}{兼职 核心开发人员}{数字货币交易公司(保密)}{2020.07-今}
+    \begin{rExperience}{兼职 核心开发人员}{数字货币交易公司(保密)}{2020.07-2022.02}
         \textbf{项目背景}:
         升级现有客户端并发网络库，降低交易网站信息收集处理数据延迟，编写高频交易的底层库\\
         \textbf{项目内容}
@@ -45,9 +45,22 @@
             \itemsep -0.5em \vspace{-0.5em}
             \item 搭建基础设施：使用Rust语言，运用缓存行优化和Ring Buffer等底层优化，针对项目任务特点实现异步runtime，性能超过tokio/glommio/mononio； 利用Core Affinity优化性能；基于UDP实现转发器，绕开服务器机房对于IP的限制；同时支持Arm架构和x86架构,Linux和MacOS系统；基于DPDK和smoltcp实现和优化自己的网络协议栈，有效利用多核心多网卡；参考Akka Actor实现Rust上的单机Actor系统，大幅提高系统并发性能；实现跨语言数据结构和转义工具unidef，强于json-typedef-codegen; 从开源js代码库ccxt进行代码分析，完善自己系统。
             \item 搭建监控系统：运用Prometheus和Grafana搭建监控系统，实时监控不同交易平台数据采集处理情况
-            \item 搭建绘图引擎：尝试Python下多种绘图引擎，最终采用利用Dash Plotly搭建Web端绘图控制平台，前端采用React JS，后端使用Flask
+            % \item 搭建绘图引擎：尝试Python下多种绘图引擎，最终采用利用Dash Plotly搭建Web端绘图控制平台，前端采用React JS，后端使用Flask
             \item 搭建分布式回测系统：低延迟从不同的数字货币交易平台收集并处理数据，将数据输出到Kafka，用Ansible实现AWS上自动扩容和派发任务，用PostgreSQL+TimescaleDB收集分析回测结果；实现Kafka在AWS S3上的部署
             \item 实现JSON解析库：用过程宏、CPU缓存、减少缺页错误，将JSON反序列化效率提高到8倍，快于serde库一倍 
+        \end{itemize}
+    \end{rExperience}
+    \begin{rExperience}{全职 后端开发}{Infinity Force Inc, Singapore}{2022.02-今}
+        \textbf{项目背景}:
+        围绕 Axie Infinity 游戏打造工会系统\\
+        \textbf{项目内容}
+        \begin{itemize}
+            \itemsep -0.5em \vspace{-0.5em}
+            \item 用Solidity实现Infinity Force Token，即将上线
+            \item 利用Rust优化现有Python+Postgres的后端开发框架，利用Code Generation优化workflow
+            \item 挖掘游戏私有API，使用web3实现工会资产管理
+            % \item 辅助前端vue实现部分功能
+            \item 重写ERX.io，泰国唯一政府许可的crypto交易所 
         \end{itemize}
     \end{rExperience}
 \end{rSection}
@@ -60,16 +73,21 @@
     %     \textbf{开发原因}：现有的Minecraft服务器单机支持的客户端数量较低，因此希望开发一款支持高在线人数的服务器\\
     %     \textbf{项目开发}：使用Scala开发，除去协议部分，完全自己重写，正在开发
     % \end{rProject}
-    \begin{rProject}{个人项目}{Kafcat──Kafka命令行工具}{2021.3-今}
-        \textbf{项目概述}：现有工具kafkacat的功能不够强大，提交Pull Request后发现代码难以维护，也不在积极开发，于是新建立项目，采用新语言和架构开发\\
-        \textbf{项目开发}：使用Rust开发，完全使用异步编程，支持librdkafka和rust-kafka两个实现，支持topic之间复制，topic导出导出为json，利用管道使针对标准输入输出的程序使用Kafka
-    \end{rProject}
+    % \begin{rProject}{个人项目}{Kafcat──Kafka命令行工具}{2021.3-今}
+    %     \textbf{项目概述}：现有工具kafkacat的功能不够强大，提交Pull Request后发现代码难以维护，也不在积极开发，于是新建立项目，采用新语言和架构开发\\
+    %     \textbf{项目开发}：使用Rust开发，完全使用异步编程，支持librdkafka和rust-kafka两个实现，支持topic之间复制，topic导出导出为json，利用管道使针对标准输入输出的程序使用Kafka
+    % \end{rProject}
 
-    \begin{rProject}{合作项目}{WP-Reliable MD}{2018.09-2019.10}
-        \textbf{项目概述}：原自用Wordpress Markdown插件的原作者停止开发，于是将Markdown编辑器Tui-Editor成功引入WordPress插件商店\\
-        \textbf{项目开发}：使用JavaScript，针对WordPress的界面风格设计了GUI，并替换掉编辑器的渲染引擎，重写渲染模块，使其支持Tex数学公式。采用非侵入式的方法，避免造成文章内容丢失和内容不一致。
-    \end{rProject}
+    % \begin{rProject}{合作项目}{WP-Reliable MD}{2018.09-2019.10}
+    %     \textbf{项目概述}：原自用Wordpress Markdown插件的原作者停止开发，于是将Markdown编辑器Tui-Editor成功引入WordPress插件商店\\
+    %     \textbf{项目开发}：使用JavaScript，针对WordPress的界面风格设计了GUI，并替换掉编辑器的渲染引擎，重写渲染模块，使其支持Tex数学公式。采用非侵入式的方法，避免造成文章内容丢失和内容不一致。
+    % \end{rProject}
 
+    \begin{rProject}{个人项目}{Unidef}{2021.07-今}
+        \textbf{项目概述}：Unidef是一个通用的类型转换，代码生成，转译的框架，用Python开发，后用Scala重写\\
+        \textbf{项目开发}：维护一套统一的跨语言的类型模型和AST，力求保留类型尽可能多的语义，同时不失一般性。支持从json，jsonschema，FIX，各大语言之间类型的互相转换和代码转译。也作为高层次编译器优化的实验场地
+    \end{rProject}
+    
     % \begin{rProject}{个人项目}{Escape射击游戏}{2020.02}
     %     \textbf{项目概述}：作为AI的训练环境和体验游戏，2D鸟瞻视角射击游戏项目\\
     %     \textbf{游戏设计}：该游戏需要大量AI互动，需要一定的物理特效和性能需求\\
@@ -95,11 +113,11 @@
         \item ByteCamp 2021 自动代码缺陷修复方向 软件工程小组第三名 \hfill 2021.08
         \item 托福英语考试~总分106(听力29,阅读30,口语21，写作26) \hfill 2019.10
         \item 信息学奥赛(NOIP)提高组山东赛区一等奖 \hfill 2017.11/2018.11
-        \item 中国计算机学会~认证学生会员 \hfill 2019.07
+        % \item 中国计算机学会~认证学生会员 \hfill 2019.07
         \item RoboCom机器人大赛全球锦标赛~一等奖 \hfill 2018.07
-        \item 清华大学登峰杯数据挖掘竞赛~二等奖 \hfill 2018.07 
+        % \item 清华大学登峰杯数据挖掘竞赛~二等奖 \hfill 2018.07 
         \item 全国计算机等级考试~四级网络工程师 \hfill 2016.11
-        \item 第19届中国移动“和”教育杯电脑制作大赛~一等奖（项目第一名） \hfill 2016.07
+        % \item 第19届中国移动“和”教育杯电脑制作大赛~一等奖（项目第一名） \hfill 2016.07
     \end{itemize}
 \end{rSection}
 \end{document}
