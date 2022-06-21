@@ -19,12 +19,7 @@
 \usepackage[left=0.6in,top=0.6in,right=0.6in,bottom=0.6in]{geometry} % Document margins
 
 \setsansfont{DejaVu Serif}
-
-\usepackage{xeCJK}
-\setCJKmainfont{SimSun}[AutoFakeBold] %对应rm罗马
-\setCJKsansfont{SimHei}[AutoFakeBold] %对应sf无衬线
-\setCJKmonofont{FangSong}[AutoFakeBold] %对应tt打字机
-
+\usepackage {ctex}
 
 \newcommand\threeparts[4][t]{
   \parbox[#1]{.2\textwidth}{\raggedright#2}\hfill
@@ -105,10 +100,11 @@
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
   \sectionskip
-  {\bf \large \texttt{#1}} % Section title
+  {\bf \large \texttt{\heiti #1}} % Section title
   \smallskip
   \hrule % Horizontal line
   \vspace{-0.5em}
+  \songti
 }{
 }
 
@@ -116,7 +112,7 @@
   \bgcolor{\threeparts{#1}{#2}{#3}}
   }{
 }
-
+ 
 \newenvironment{rProject}[3]{ % 3 input arguments - project type - project name - date
   \bgcolor{\threeparts{#1}{#2}{#3}}
   }{
