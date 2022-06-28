@@ -35,6 +35,7 @@
     \begin{rExperience}{Internship Server Arch}{Beijing ByteDance Technology Co., Ltd.}{2022.04-2022.09}
         \begin{itemize}
             \itemsep -0.5em \vspace{-0.5em}
+            \item Propose and implement independently \href{https://github.com/qiujiangkun/git-fuse}{git-fuse}, which is a ultra fast git tool combined with FUSE, solving the slow cloning problem of huge repos while using codegen tools. It minimizing the total processing time to 1/20, disk usage to 1/100, used in Overpass. And hosted a tech talk within the company, with 100+ audience
             \item According to company's demand, write a universal and customizable API Linter, supporting both ProtoBuf and Thrift, running as a CLI tool and an gitlab CI task
             \item Maintain and improve on DevFlow, letting it support more products. It's a platform that integrates a fluent online editor, peer review for API changes, linting, compatibility check, code generation
             \item Maintain and improve on Overpass, a widely used platform that collects RPC definition files and generate RPC client for other go projects
@@ -70,7 +71,7 @@
             \item Slow Speed Refresh Service：Read changelog from PostgreSQL，clense changelog for each tenant company and write to different Kafka topics according to configuration；Implement a Slow Speed Refresh Queue and its Web Dashboard for internal use with restricted SQL injection       
         \end{itemize}
     \end{rExperience}
-    \begin{rExperience}{Part-time Job}{A quantitative trading company of digital currencies}{Jul 2020-Now}
+    \begin{rExperience}{Part-time Job}{High Frequency Trading of Cryptocurrencies, Personal Project}{Jul 2020-Now}
         \begin{itemize}
             \itemsep -0.5em \vspace{-0.5em}
             \item Developed, from scratch in Rust, a set of libraries to collect and process data from dozens of trading platforms. Utilize cache line, lockless ring buffer, etc, to implement a 1:1 thread model and boost performance. Implemented a UDP proxy to work around AWS whitelist.
