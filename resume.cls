@@ -103,7 +103,6 @@
   {\bf \large \texttt{\heiti #1}} % Section title
   \smallskip
   \hrule % Horizontal line
-  \vspace{-0.5em}
   \songti
 }{
 }
