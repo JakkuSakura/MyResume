@@ -16,7 +16,7 @@
 \begin{rSection}{\faCogs~Skill Set}
     \begin{itemize}
         \itemsep -0.5em
-        \item Expertise in Rust for 3 years in High Frequency Trading and web3.
+        \item Expertise in Rust for 4 years in High Frequency Trading and web3.
         \item Long history of learning Java, C, C++ since primary school 
         \item Algorithm and Data Structure training and competitions in middle and high school
         \item A wide technical stack, all main stream languages in fields from backend to basic frontend, from machine learning to smart contracts 
@@ -26,13 +26,13 @@
 
 \begin{rSection}{\faGraduationCap~Education}
     \begin{itemize}
-        \item Osaka University, Japan, Exchange, Humanity courses \hfill 2023 
         \item HKUST, Hong Kong, Undergraduate, Computer Engineering major \hfill 2020-2025
+        \item Osaka University, Japan, Exchange, Humanity courses \hfill 2023 
     \end{itemize}
 \end{rSection}
 
 \begin{rSection}{\faUsers~Working Experienes}
-    \begin{rExperience}{Intern Market Access}{Qube Research and Technologies}{Feb 2023-Aug 2022}
+    \begin{rExperience}{Intern Market Access}{Qube Research and Technologies}{Feb 2023-Now}
         \begin{itemize}
             \itemsep -0.5em \vspace{-0.5em}
             \item QRT is a global quant trading company split from Credit Suisse
@@ -40,28 +40,29 @@
             \item Developed a comprehensive framework and advanced tools for efficiently managing and converting terabytes of historical market data.
             \item Created graphical analyzers to assess and improve the performance of trading links, providing valuable insights for decision-making and optimization.
             \item Designed and developed simulators for various exchanges, enabling accurate testing and evaluation of software and hardware order management system in simulated real-time environments.
+            \item Designed and migrate trading monitoring system to support large-scale and flexible monitoring
             \item Studied mathematical techniques for hedging and backtesting
         \end{itemize}
     \end{rExperience}
     \begin{rExperience}{Intern Server Arch}{Beijing ByteDance}{Apr 2022-Sep 2022}
         \begin{itemize}
             \itemsep -0.5em \vspace{-0.5em}
-            \item ByteDance is the company who developed TikTok
-            \item Propose and implement independently git-fuse, designed for frequent codegen service for huge repos, minimizing the total processing time to 1/20, disk usage to 1/100, used in Overpass. Shared a talk with 100+ audience in the company
+            % \item ByteDance is the company who developed TikTok
+            \item Proposed and implemented independently git-fuse, designed for frequent codegen service for huge repos, minimizing the total processing time to 1/20, disk usage to 1/100, used in Overpass. Shared a talk with 100+ audience in the company
             \item Implemented a universal and customizable linter for ProtoBuf and Thrift, to facilitate automatic code review
-            \item Maintain and improve on DevFlow, a platform that integrates a fluent online editor, peer review for API changes, linting, compatibility check, code generation
-            \item Maintain and improve on Overpass, a widely used platform that collects RPC definition files and generate RPC client for other go projects
+            \item Maintained and improved on DevFlow, a platform that integrates a fluent online editor, peer review for API changes, linting, compatibility check, code generation
+            \item Maintained and improved on Overpass, a widely used platform that collects RPC definition files and generate RPC client for other go projects
         \end{itemize}
     \end{rExperience}
     \begin{rExperience}{Consultant}{Various Companies}{~}
         \begin{itemize}
             \itemsep -0.5em \vspace{-0.5em}
-            \item Rewrite a Tezos smart contract from the obscure Haskell Morley to clear SmartPy code
-            \item Build a MVP exchange from scratch, implemented in-memory limit-order book, database API, user management, statistics dashboard, with special attention to compliance in Thailand
-            \item Build ColdVault, bringing Hardware Secure Module to Ethereum and Solona
-            \item Build $MC^{2}$, a copy trading platform but runs on Decentralized Exchanges
-            \item Build RedAlert, providing quick notification to price hikes in crypto world
-            \item Build various smart contracts on Tezos, Ethereum and Solona
+            % \item Rewrote a Tezos smart contract from the obscure Haskell Morley to clear SmartPy code
+            \item Built a MVP exchange from scratch, implemented in-memory limit-order book, database API, user management, statistics dashboard, with special attention to compliance in Thailand
+            \item Built ColdVault, bringing Hardware Secure Module to Ethereum and Solona
+            \item Built $MC^{2}$, a copy trading platform but runs on Decentralized Exchanges
+            \item Built RedAlert, providing quick notification to price hikes in crypto world
+            \item Built various smart contracts on Tezos, Ethereum and Solona
         \end{itemize}
     \end{rExperience}
     
@@ -70,17 +71,18 @@
             \itemsep -0.5em \vspace{-0.5em}
             \item Mesoor AI is a company in Shanghai, providing AI hiring platform to customers.
             \item Implemented a distributed throttler for very slow yet critical requests, with modified Sliding Log algorithm in Scala Akka and Redis
-            \item Explore workflow of and integrated WeChat Work
+            % \item Explore workflow of and integrated WeChat Work
             \item Build a Slow Refresh Service, channeling PostgreSQL changelog to Kafka       
         \end{itemize}
     \end{rExperience}
-    \begin{rExperience}{Part-time}{High Frequency Trading of Cryptocurrencies}{Jul 2020-Feb 2022}
+    \begin{rExperience}{Consultant}{High Frequency Trading of Cryptocurrencies}{Jul 2020-Feb 2023}
         \begin{itemize}
             \itemsep -0.5em \vspace{-0.5em}
-            \item Develop infrastructure in Rust from scratch, to collect market data feed and manage orders and accounting, with focus on ultimate low latency.
-            \item Adopt and customize a TCP stack in Rust, running on DPDK to work around limitation of linux kernal network stack
-            \item Invent tools to parse json and format http request, outperform the defacto library by a margin
-            \item Iterate architecture to use same logic code for real-time trading and backtesting
+            \item Designed and developed trading system in Rust from scratch, to collect market data feed and manage orders and accounting, with focus on ultimate low latency.
+            \item Developed market-making and arbitraging algorithms that earn profits in production, supporting 5 traders
+            \item Supported a various of exchanges: Binance, Okex, gateio, and many more de-centrialized exchanges
+            \item Adopted and customize a TCP stack in Rust, running on DPDK to work around limitation of linux kernal network stack
+            \item Invented tools to parse json and format http request, outperform the defacto library by a margin
         \end{itemize}
     \end{rExperience}
 
@@ -90,21 +92,21 @@
     \begin{rProject}{Personal Project}{SakuraTrading}{Feb 2023-Now}
         \begin{itemize}
             \itemsep -0.5em \vspace{-0.5em}
-            \item SakuraTrading is an ongoing effort to build HFT trading system emphasizing backtest-first
+            \item SakuraTrading is an ongoing effort to build HFT trading system in Rust emphasizing correctness and personal usage
             \item No compromise among correctness, performance and elegancy, with help of SHLL(see below)
             \item Automatic selective computation of technical analysis indicators used in strategies
             \item Versatile data server for debugging, dashboard and backtesting
-            \item Trade and backtest dashboard with E-Chart
+            \item Trade and backtest dashboard with E-Chart and React
         \end{itemize}
     \end{rProject}
     \begin{rProject}{Personal Project}{High Level Staged Language}{Jan 2022-Now}
         \begin{itemize}
             \itemsep -0.5em \vspace{-0.5em}
-            \item SHLL is a programming language exploring high-level compiler optimization, to achieve real zero-cost abstraction and enhance compile time in Rust.
-            \item Apply common simple optimization techniques and advanced ones: monomorphization and staging
-            \item Implement comptime from ziglang and type algebra from TypeScript
-            \item Use Rust's grammar and generates transformed rust code to reuse libraries, but other languages are also supported
-            \item Support optimization mode and interpreter mode
+            \item SHLL enhances Rust's type system for greater expressiveness at build time.
+            \item Implements advanced optimizations like monomorphization and staging.
+            \item Enables cross-language compatibility for code translation and optimization.
+            \item Offers flexibility with optimization and interpretation modes.
+            \item Bridges high-level abstractions with low-level code generation.
         \end{itemize}
     \end{rProject}
 \end{rSection}
