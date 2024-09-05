@@ -371,7 +371,7 @@ The exception to this rule is that you should have a dedicated skills section if
   details: [
     - Built a MVP exchange from scratch, implemented in-memory limit-order book, database API, user management, statistics dashboard, with special attention to compliance in Thailand
     - Built ColdVault, bringing Hardware Secure Module to Ethereum and Solana
-    - Built $"MC"^{2}$, a copy trading platform but runs on Decentralized Exchanges
+    - Built $"MC"^2$, a copy trading platform but runs on Decentralized Exchanges
     - Built RedAlert, providing quick notification to price hikes in crypto world
     - Built various smart contracts on Tezos, Ethereum and Solana
   ],
