@@ -325,9 +325,19 @@ The exception to this rule is that you should have a dedicated skills section if
 
 = Experience
 #exp(
+  role: "System Engineer",
+  project: "Vincella Limited",
+  date: "Aug 2024 - Present",
+  details: [
+    - Vincella Limited is a start-up trading firm in Hong Kong, with founders from Citadel and Goldman Sachs
+    - Design overall trading architecture including data processing, research, order management, and backtesting 
+    - Develop low-latency trading infrastructure from scratch with modern C++
+  ]
+)
+#exp(
   role: "Intern Market Access",
   project: "Qube Research and Technologies",
-  date: "Feb 2023 - Present",
+  date: "Feb 2023 - Jul 2024",
   details: [
     - QRT is a global quant trading company split from Credit Suisse
     - Implemented and optimized high-performance links in C++ for processing incoming market data and executing outgoing orders
