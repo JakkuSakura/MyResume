@@ -361,7 +361,7 @@ The exception to this rule is that you should have a dedicated skills section if
     - Designed and developed Order Management System and Accounting System, to ensure consistency and correctness
   ],
 )
-
+#pagebreak()
 #exp(
   role: "Intern Server Arch",
   project: "Beijing ByteDance",
@@ -612,7 +612,7 @@ In general, the hyperlinks I tend to include are:
 #exp(
   role: "Personal",
   project: "Sakura Trading",
-  date: "Feb 2023-Now",
+  date: "2022-Now",
   summary: "Bbuild HFT trading system in Rust emphasizing correctness and personal usage",
   details: [
     - No compromise among correctness, performance and elegancy, with help of SHLL(see below)
@@ -625,7 +625,7 @@ In general, the hyperlinks I tend to include are:
 #exp(
   role: "Personal",
   project: "High Level Staged Language",
-  date: "Jan 2022-Now",
+  date: "2022-Now",
   details: [
     - SHLL enhances Rust's type system for greater expressiveness at build time.
     - Implements advanced optimizations like monomorphization and staging.
