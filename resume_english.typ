@@ -327,19 +327,21 @@ The exception to this rule is that you should have a dedicated skills section if
 #exp(
   role: "System Engineer",
   project: "Vincella Limited",
-  date: "Aug 2024 - Present",
+  date: "Aug 2024 - Dec 2024",
+  summary: "A trading start-up in Hong Kong, with founders from Citadel and Goldman Sachs",
   details: [
-    - Vincella Limited is a start-up trading firm in Hong Kong, with founders from Citadel and Goldman Sachs
-    - Design overall trading architecture including data processing, research, order management, and backtesting 
+    - Design overall trading architecture including data processing, research, order management, and backtesting
     - Develop low-latency trading infrastructure from scratch with modern C++
+    - Explore modern research facilities with technologies from big data and machine learning fields
+    - Deploy best practices of DevOps, setting up offline CI/CD workflow
   ]
 )
 #exp(
   role: "Intern Market Access",
   project: "Qube Research and Technologies",
   date: "Feb 2023 - Jul 2024",
+  summary: "A global quant trading company split from Credit Suisse",
   details: [
-    - QRT is a global quant trading company split from Credit Suisse
     - Implemented and optimized high-performance links in C++ for processing incoming market data and executing outgoing orders
     - Developed a comprehensive framework and advanced tools for efficiently managing and converting terabytes of historical market data
     - Created graphical analyzers to assess and improve the performance of trading links, providing valuable insights for decision-making and optimization
@@ -366,6 +368,7 @@ The exception to this rule is that you should have a dedicated skills section if
   role: "Intern Server Arch",
   project: "Beijing ByteDance",
   date: "Apr 2022 - Sep 2022",
+  summary: "The company behind TikTok",
   details: [
     - Proposed and implemented independently git-fuse, designed for frequent codegen service for huge repos, minimizing the total processing time to 1/20, disk usage to 1/100, used in Overpass. Shared a talk with 100+ audience in the company
     - Implemented a universal and customizable linter for ProtoBuf and Thrift, to facilitate automatic code review
@@ -377,7 +380,7 @@ The exception to this rule is that you should have a dedicated skills section if
 #exp(
   role: "Consultant",
   project: "Various Companies",
-  date: "~",
+  date: "",
   details: [
     - Built a MVP exchange from scratch, implemented in-memory limit-order book, database API, user management, statistics dashboard, with special attention to compliance in Thailand
     - Built ColdVault, bringing Hardware Secure Module to Ethereum and Solana
@@ -391,8 +394,8 @@ The exception to this rule is that you should have a dedicated skills section if
   role: "Intern Backend Dev",
   project: "Mesoor AI",
   date: "Dec 2020 - June 2021", 
+  summary: "Mesoor AI is a company in Shanghai, providing AI hiring platform to customers.",
   details: [
-    - Mesoor AI is a company in Shanghai, providing AI hiring platform to customers.
     - Implemented a distributed throttler for very slow yet critical requests, with modified Sliding Log algorithm in Scala Akka and Redis
     - Build a Slow Refresh Service, channeling PostgreSQL changelog to Kafka
   ]
@@ -610,15 +613,18 @@ In general, the hyperlinks I tend to include are:
 
 = Projects
 #exp(
-  role: "Personal",
+  role: "Final Year Project",
   project: "Sakura Trading",
   date: "2022-Now",
-  summary: "Bbuild HFT trading system in Rust emphasizing correctness and personal usage",
+  summary: "Build HFT system in Rust with knowledge in all aspects",
   details: [
-    - No compromise among correctness, performance and elegancy, with help of SHLL(see below)
-    - Automatic selective computation of technical analysis indicators used in strategies
-    - Versatile data server for debugging, dashboard and backtesting
-    - Trade and backtest dashboard with E-Chart and React
+    - Low-latency crypto trading hotpath, with optimization on orderbook handling, network stack, and Rest/JSON codec, etc
+    - Versatile data pipeline for research, backtesting, especially parquet integration 
+    - Careful modelling of instruments for arbitraging
+    - Distributed research & backtesting infrastructure with Ray, Polars and ClickHouse
+    - Frontend with SolidJS and gpui
+    - Monitoring infrastructure with prometheus and grafana 
+
   ]
 )
 
@@ -626,8 +632,8 @@ In general, the hyperlinks I tend to include are:
   role: "Personal",
   project: "High Level Staged Language",
   date: "2022-Now",
+  summary: "Enhances Rust's type system for greater expressiveness at build time",
   details: [
-    - SHLL enhances Rust's type system for greater expressiveness at build time.
     - Implements advanced optimizations like monomorphization and staging.
     - Enables cross-language compatibility for code translation and optimization.
     - Offers flexibility with optimization and interpretation modes.
@@ -643,7 +649,7 @@ In general, the hyperlinks I tend to include are:
 - Gold Award of RoboCom2018 Global Championship(Robot Competition) #h(1fr) Jul 2018
 // - First Prize in Personal Skills of RoboCom2018 Global Championship #h(1fr) Jul 2018
 // - Best Programmer Prize of RoboCom2018 Global Championship #h(1fr) Jul 2018
-- Second Prize in 2017 Tsinghua University Dengfeng Cup Data Mining Competition #h(1fr) Jul 2018
+// - Second Prize in 2017 Tsinghua University Dengfeng Cup Data Mining Competition #h(1fr) Jul 2018
 // - Second Prize in China Shandong Student Maker (CSSM) Competition #h(1fr) May 2017
 - National Computer Rank Examination Level 4, Network Engineer #h(1fr) Nov 2016
 - First Prize(6th) in the Middle School Group of National Informatics Olympiad in Provinces #h(1fr) Oct 2016
