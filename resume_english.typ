@@ -325,6 +325,18 @@ The exception to this rule is that you should have a dedicated skills section if
 
 = Experience
 #exp(
+  role: "Senior Developer",
+  project: "Auros Limited",
+  date: "Jan 2025 - Present",
+  summary: "A leading global liquidity provider and high-frequency trading firm",
+  details: [
+    - Designed and implemented high-performance exchange connectivity framework, reducing integration time for new venues while ensuring regulatory compliance
+    - Orchestrated end-to-end modernization of DevOps infrastructure, implementing containerization, CI/CD pipelines, and infrastructure-as-code practices that reduced deployment failures
+    - Optimized performance-critical pathways through advanced profiling and algorithmic improvements, achieving 30% reduction in order execution latency while enhancing fault tolerance
+  ]
+)
+
+#exp(
   role: "System Engineer",
   project: "Vincella Limited",
   date: "Aug 2024 - Dec 2024",
