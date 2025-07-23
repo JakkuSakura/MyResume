@@ -196,7 +196,7 @@ Prior to graduating, I opted to go with option 2 and never ran into issues. In g
 = Skills
 #skills((
   ("Rust", (
-    [Rust for 4 years in High Frequency Trading and web3.],
+    [Rust for 5 years in High Frequency Trading and web3.],
 
   )),
   ("HFT", (
@@ -630,19 +630,20 @@ In general, the hyperlinks I tend to include are:
   date: "2022-Now",
   summary: "Build HFT system in Rust with knowledge in all aspects",
   details: [
-    - Low-latency crypto trading hotpath, with optimization on orderbook handling, network stack, and Rest/JSON codec, etc
+    - Low-latency crypto trading hotpath, with optimization on orderbook handling, network stack, and REST/JSON codec, etc
     - Versatile data pipeline for research, backtesting, especially parquet integration 
     - Careful modelling of instruments for arbitraging
     - Distributed research & backtesting infrastructure with Ray, Polars and ClickHouse
-    - Frontend with SolidJS and gpui
+    - Desktop with C\# Avalonia framework
     - Monitoring infrastructure with prometheus and grafana 
+    - Implemented AMM arbitrage algorithm with customized SPFA algorithm and Ethereum event parsing, achieving DEX-CEX arbitrage. 
 
   ]
 )
 
 #exp(
   role: "Personal",
-  project: "High Level Staged Language",
+  project: "FerroPhase -- High Level Staged Language",
   date: "2022-Now",
   summary: "Enhances Rust's type system for greater expressiveness at build time",
   details: [
